@@ -20,7 +20,7 @@
     "test": "jest --watchAll",
     "docs:json": "compodoc -p ./tsconfig.json -e json -d .",
     "storybook": "npm run docs:json && start-storybook -p 6006",
-    "build-storybook": "npm run docs:json && build-storybook",
+    "build-storybook":"build-storybook -o docs-build",
     "init-msw": "msw init src/",
     "predeploy": "npm run build-storybook",    
     "deploy-storybook": "gh-pages -d storybook-static"  
